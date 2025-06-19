@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./asset/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./asset/favicon/apple- icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./asset/favicon/apple -icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./asset/favicon/apple -icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114 " href="./asset/favicon/apple- icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120 " href="./asset/favicon/apple-icon-120x120.png ">
+    <link rel="apple-touch-icon" sizes="144x144" href="./asset/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./asset/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/favicon/ apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./asset/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png " sizes="32x32" href="./asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/favicon/favicon-96x96.png">
+    <liên kết rel="biểu tượng" loại="hình ảnh/png" kích thước="16x16" href="./asset/favicon/favicon-16x16.png">
+        <liên kết rel="bản kê khai" href="/manifest.json">
+            <meta name="msapplication-TileColor" nội dung="#ffffff">
+            <meta name="msapplication-TileImage" nội dung="/ms-icon-144x144.png">
+            <meta name="theme-color" nội dung="#ffffff">
+            <!--css -->
+            <link rel="stylesheet" href="./asset/css/reset.css">
+            <link rel="stylesheet" href="./asset/css/style.css">
+            <title>MY CV</title>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="container">
+                <div class="body">
+                    <a href="#home" class="logo">
+                        <img src="./asset/img/devan-removebg-preview.png" alt="Phuoc An" width="80px">
+                    </a>
+                    <!-- menu -->
+                    <i class="fa-solid fa-bars menu_icon"></i>
+                    <nav class="navbar">
+                        <ul class="navbar__list ">
+                            <li class="navbar__item">
+                                <a href="#home" class="navbar__link navbar__link--active">
+                                    TRANG CHỦ
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#gioithieu" class="navbar__link">
+                                    GIỚI THIỆU
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#skill" class="navbar__link">
+                                    KỸ NĂNG
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#project" class="navbar__link">
+                                    DỰ ÁN
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#contact" class="navbar__link">
+                                    LIÊN HỆ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <!-- Trang chu -->
+            <section class="home " id="home">
+                <div class="container">
+                    <div class="home-detail">
+                        <div class="home-left">
+                            <H1>Hi, I'm Phước An.</H1>
+                            <h2>I'm Project Management
+                                <span style="--i:3;" data-text="And">And</span>
+                                <span style="--i:2;" data-text="FE">FE</span>
+                                <span style="--i:1;" data-text="DEVELOPER">DEVELOPER</span>
+                            </h2>
+                            <p> Với sự kết hợp giữa Project Management và khả năng thiết kế giao diện tinh tế chính là
+                                chìa
+                                khóa để
+                                kiến tạo nên những sản phẩm không chỉ đẹp mắt, mượt mà mà còn đạt được mục tiêu đề ra và
+                                kết
+                                nối sâu sắc với người dùng.
+                                Tôi luôn sẵn sàng học hỏi, đóng góp và phát triển cùng mọi dự án.</p>
+                            <div class="btn-sci">
+                                <button class="btn" onclick="download__pdf()">Download CV</button>
+                                <div class="sci">
+                                    <a href="https://github.com/PhuocAn010205" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/an-hu%E1%BB%B3nh-nguy%E1%BB%85n-ph%C6%B0%E1%BB%9Bc-a660b5331/"
+                                        target="_blank" rel="noopener noreferrer"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="mailto:huynh.an.10a1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-img">
+                            <img src="./asset/img/andepzai.jpg" alt="Phuoc An">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Gioi thieu -->
+            <section class="intro " id="gioithieu">
+
+                <div class="container">
+                    <h2 class="section__heading">Giới Thiệu</h2>
+                    <div class="intro__list">
+                        <!-- item1 -->
+                        <article class="intro__item">
+                            <h3 class="intro__item-heading">Về tôi</h3>
+                            <ul class="intro__item-list">
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Huỳnh Nguyễn Phước An</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    <span>1/2/2005</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                    <span>Xã Xuân Thiện ,huyện Thống Nhất,Đồng Nai</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-school"></i>
+                                    <span style="line-height: 1.5; letter-spacing: 2px; text-align: justify;">Hiện là
+                                        sinh viên năm hai ngành Công nghệ thông tin tại Trường Đại học Giao thông vận
+                                        tải (UTH).</span>
+                                </li>
+                            </ul>
+
+                        </article>
+                        <!-- item 2 -->
+                        <article class="intro__item">
+                            <h3 class="intro__item-heading">Sở thích</h3>
+                            <ul class="intro__item-list">
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <span>Khám phá và nghiên cứu kiến thức, công nghệ mới.</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-microchip"></i></i>
+                                    <span>Cập nhật các xu hướng và đổi mới trong lĩnh vực công nghệ thông tin.</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-book"></i></i>
+                                    <span>Đọc sách để mở rộng kiến thức và tìm kiếm nguồn cảm hứng.</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <span>Nghỉ ngơi và thư giãn để tái tạo năng lượng khi cần.</span>
+                                </li>
+                            </ul>
+
+                        </article>
+                        <!-- item 3 -->
+                        <article class="intro__item">
+                            <h3 class="intro__item-heading">Điểm mạnh</h3>
+                            <ul class="intro__item-list">
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-shapes"></i>
+                                    <span>Linh hoạt và nhạy bén trong tư duy, có khả năng phân tích và giải quyết vấn đề
+                                        hiệu quả.</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-fire"></i>
+                                    <span>Nhiệt tình, sẵn sàng hỗ trợ đồng nghiệp và đóng góp tích cực vào công việc
+                                        chung.</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                    <span>Khả năng cân bằng hiệu quả giữa công việc học tập và cuộc sống cá nhân.</span>
+                                </li>
+                                <li class="intro__item-list__item">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <span>Tinh thần trách nhiệm cao và nghiêm túc tuân thủ các quy định, cam kết.</span>
+                                </li>
+                            </ul>
+
+                        </article>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Skills -->
+            <section class="skill" id="skill">
+                <div class="container">
+                    <h2 class="section__heading">Kỹ Năng</h2>
+
+                    <div class="skill__list">
+                        <!-- Viền hiệu ứng chạy -->
+                        <div class="border-top"></div>
+                        <div class="border-bottom"></div>
+
+                        <!-- Front-End -->
+                        <article class="skill__top">
+                            <h3 class="skill__heading">Front-End</h3>
+                            <div class="skill__box">
+                                <ul class="skill__box-list">
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-brands fa-html5"></i> <span>HTML</span>
+                                    </li>
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+                                    </li>
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-brands fa-js"></i><span>JS</span>
+                                    </li>
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-brands fa-bootstrap"></i> <span>Bootstrap</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- Back-End -->
+                        <article class="skill__bottom">
+                            <h3 class="skill__heading">Back-End</h3>
+                            <div class="skill__box">
+                                <ul class="skill__box-list">
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-brands fa-php"></i><span>PHP</span>
+                                    </li>
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-brands fa-node-js"></i><span>Node.js</span>
+                                    </li>
+                                    <li class="skill__box-list__item">
+                                        <i class="fa-solid fa-database"></i><span>MySQL</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Du an -->
+            <section id="project">
+
+                <div class="container">
+                    <h2 class="section__heading">Fish Project</h2>
+                    <div class="project__box">
+                        <article class="project__left">
+                            <div class="project__left-box project__left-box__active">
+                                <p class="numb">01</p>
+                                <h3 class="project__title">Frontend Project</h3>
+                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                                <P class="project__desc">Trong một thế giới mà con người ngày càng đề cao trải nghiệm cá
+                                    nhân và kết nối cảm xúc, mình tin rằng mô hình phòng khám anime này sẽ không chỉ là
+                                    nơi điều trị – mà là một thế giới nhỏ đầy cảm hứng, chữa lành cả răng miệng lẫn tâm
+                                    hồn.
+                                    Đây là sự giao thoa giữa hai thế giới tưởng chừng đối lập – anime và y tế – nhưng
+                                    lại hoà quyện một cách hoàn hảo để tạo nên một trải nghiệm hoàn toàn mới: một nơi mà
+                                    nụ cười bắt đầu bằng niềm vui, và niềm vui bắt đầu bằng trí tưởng tượng.
+
+                                </P>
+                                <div class="tech">
+                                    <p class="tech__desc">HTML,CSS,JS</p>
+                                </div>
+                            </div>
+                            <!-- numb2 -->
+                            <div class="project__left-box">
+                                <p class="numb">02</p>
+                                <h3 class="project__title">Frontend Project</h3>
+                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                                <P class="project__desc">Trong một thế giới đang chuyển mình mạnh mẽ về công nghệ và thị
+                                    hiếu thẩm mỹ, thị trường bất động sản không chỉ còn là cuộc chơi của giá trị tài sản
+                                    – mà còn là trải nghiệm cảm xúc,
+                                    sự tiện lợi và sự kết nối giữa con người và không gian sống. Chính vì thế, Besnik
+                                    Agency ra đời như một làn gió mới trong cách tiếp cận lĩnh vực bất động sản, lấy cảm
+                                    hứng từ sự tối giản, công nghệ hiện đại và tính nhân văn trong thiết kế.
+                                </P>
+                                <div class="tech">
+                                    <p class="tech__desc">HTML,CSS,JS</p>
+                                </div>
+                            </div>
+                            <!-- numb 3 -->
+                            <div class="project__left-box">
+                                <p class="numb">03</p>
+                                <h3 class="project__title">Frontend Project</h3>
+                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                                <P class="project__desc">
+                                    Trong thế giới hiện đại, dữ liệu và công nghệ ngày càng đóng vai trò trung tâm –
+                                    nhưng điều đó không có nghĩa trải nghiệm của con người phải trở nên khô khan. Xuất
+                                    phát từ suy nghĩ đó, dự án này
+                                    được xây dựng dựa trên ý tưởng kết hợp giữa thông tin thời tiết thực tế (thông qua
+                                    API) với hình ảnh nền phong cách anime – nhằm tạo nên một không gian vừa hữu ích,
+                                    vừa thơ mộng, vừa cá nhân hóa cao.
+                                </P>
+                                <div class="tech">
+                                    <p class="tech__desc">HTML,CSS,JS,API</p>
+                                </div>
+                            </div>
+                            <!-- numb4 -->
+                            <div class="project__left-box">
+                                <p class="numb">04</p>
+                                <h3 class="project__title">Frontend Project</h3>
+                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                                <P class="project__desc">Trong thời đại nơi âm nhạc không chỉ là một nghệ thuật mà còn
+                                    là một phong cách sống, ý tưởng về một nền tảng trực tuyến dành riêng cho các buổi
+                                    biểu diễn âm nhạc đã ra đời –
+                                    không chỉ để thông báo thông tin sự kiện mà còn truyền cảm hứng và khơi gợi cảm xúc
+                                    cho người yêu nhạc. Dự án website biểu diễn âm nhạc này được thiết kế với mục tiêu
+                                    mang đến một trải nghiệm sống động, hiện đại, dễ tiếp cận, và đặc biệt là đậm chất
+                                    nghệ thuật.
+                                </P>
+                                <div class="tech">
+                                    <p class="tech__desc">HTML,CSS,JS,Node.js</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__right">
+                            <div class="project__carousel">
+                                <div class="img-slide">
+                                    <!-- img item 1 -->
+                                    <div class="img-item">
+                                        <img src="./asset/img/duan1.jpg" alt="Du an 1">
+                                    </div>
+                                    <!-- img item 2 -->
+                                    <div class="img-item">
+                                        <img src="./asset/img/duan2.jpg" alt="Du an 2">
+                                    </div>
+                                    <!-- img item 3 -->
+                                    <div class="img-item">
+                                        <img src="./asset/img/duan3.jpg" alt="Du an 3">
+                                    </div>
+                                    <!-- img item 4 -->
+                                    <div class="img-item">
+                                        <img src="./asset/img/duan4.jpg" alt="Du an 4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation">
+                                <button class="arrow-left disabled"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </section>
+            <section id="contact">
+
+                <div class="container">
+                    <h2 class="section__heading">Contact</h2>
+                    <div class="contact__group">
+                        <div class="contact__desc">
+                            <p> Bạn đang nuôi dưỡng một ý tưởng táo bạo, một tầm nhìn lớn — nhưng vẫn đang tìm kiếm mảnh
+                                ghép công nghệ còn thiếu để đưa nó lên không gian số?
+                                <br><br>
+                                Đừng để những giới hạn về giao diện hay kỹ thuật cản bước thành công của bạn. Hãy để tôi
+                                đồng hành cùng bạn – kiến tạo nên một trải nghiệm web ấn tượng, trực quan và tạo dấu ấn
+                                mạnh mẽ trong mắt người dùng.
+                                <br><br>
+                                Từ một landing page tinh tế đến một website chuyên nghiệp, mọi dự án đều xứng đáng được
+                                đầu tư bài bản và đầy cảm hứng.
+                                <br><br>
+                                <strong>Hãy kết nối ngay hôm nay!</strong> Cùng nhau, chúng ta sẽ hiện thực hóa ý tưởng
+                                và biến nó thành một sản phẩm số đột phá, khác biệt và đầy giá trị.
+                            </p>
+
+                        </div>
+                        <form>
+                            <input type="text" id="name" placeholder="Name">
+
+                            <input type="email" id="email" placeholder="Email">
+
+                            <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                            <button type="submit" class="btn btn__form" id="subimt">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!-- footer-->
+        <footer class="footer">
+            <div class="container">
+                <h2 class="footer__desc">email:huynh.an.10a1@gmail.com</h2>
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./asset/js/index.js"></script>
+</body>
+
+</html>
