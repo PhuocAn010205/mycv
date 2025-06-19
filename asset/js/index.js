@@ -67,3 +67,58 @@ arrowLeft.addEventListener('click',() =>{
     }
     activePortfolio();
 });
+// anh 
+document.querySelectorAll('.intro__item').forEach(article => {
+  const items = article.querySelectorAll('.intro__item-list__item');
+  const imageBox = article.querySelector('.full-image');
+  const imageEl = imageBox.querySelector('img');
+  const closeBtn = imageBox.querySelector('.close-btn');
+  const nextBtn = imageBox.querySelector('.next-btn');
+  const prevBtn = imageBox.querySelector('.prev-btn');
+
+  let currentIndex = 0;
+  let imageList = [];
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const images = JSON.parse(item.getAttribute('data-images') || '[]');
+      if (!images.length) return;
+
+      imageList = images;
+      currentIndex = 0;
+      imageEl.src = imageList[currentIndex];
+      imageBox.classList.add('active');
+    });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (!imageList.length) return;
+    currentIndex = (currentIndex + 1) % imageList.length;
+    imageEl.src = imageList[currentIndex];
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (!imageList.length) return;
+    currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
+    imageEl.src = imageList[currentIndex];
+  });
+
+  closeBtn.addEventListener('click', () => {
+    imageBox.classList.remove('active');
+    imageEl.src = '';
+    imageList = [];
+  });
+});
+// chạy %
+document.querySelectorAll('.skill__box-list__item').forEach(item => {
+  const progress = item.querySelector('.skill-progress');
+  const percent = item.getAttribute('data-skill');
+
+  item.addEventListener('mouseenter', () => {
+    progress.style.width = percent + '%';
+  });
+
+  item.addEventListener('mouseleave', () => {
+    progress.style.width = '0';
+  });
+});

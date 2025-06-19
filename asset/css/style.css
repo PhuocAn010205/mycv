@@ -63,7 +63,6 @@ header {
 }
 
 .logo {
-    font-size: 2.4rem;
     font-weight: 600;
     color: var(--white-color);
 }
@@ -92,8 +91,9 @@ header {
 }
 
 /* home */
+
 section {
-    padding: 200px 0 100px;
+    padding-top:170px;
     width: 100%;
     height: 100%;
 }
@@ -103,6 +103,7 @@ section {
     align-items: center;
     gap: 50px;
     position: relative;
+    margin-top: 100px;
 }
 
 .home-detail h1 {
@@ -111,16 +112,55 @@ section {
     color: var(--white-color);
     margin-bottom: 16px;
 }
+.home-detail h1 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.8px var(--main-color);
+    animation: display-text 8s linear infinite;
+    animation-delay: calc(-4s * var(--i));
 
+}
+
+
+@keyframes display-text {
+
+    25%,
+    100% {
+        display: none;
+    }
+}
+.home-detail h1 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid var(--main-color);
+    color: var(--main-color);
+    white-space: none;
+    overflow: hidden;
+    animation: fill-text 3s linear infinite;
+
+}
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
 .home-detail h2 {
     display: inline-block;
     font-size: 3rem;
     font-weight: 500;
-    color: var(--white-color);
+    color:var(--main-color);
     margin-bottom: 16px;
 }
-
-.home-detail h2 span {
+/* .home-detail h2 span {
     position: relative;
     display: inline-block;
     color: transparent;
@@ -161,10 +201,10 @@ section {
     90% {
         width: 100%;
     }
-}
+} */
 
 .home-detail p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--white-color);
     margin-bottom: 24px;
     text-align: justify;
@@ -250,7 +290,7 @@ section {
 }
 
 .intro__list {
-    margin-top: 150px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -303,6 +343,65 @@ section {
     line-height: 1.5;
     text-align: justify;
 }
+    /* Ảnh chiếm toàn intro__item */
+    .full-image {
+      position: absolute;
+      inset: 0;
+      background-color: #000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      border-radius: 5px;
+    }
+
+    .full-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .full-image.active {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Nút đóng */
+.close-btn,
+.prev-btn,
+.next-btn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.close-btn {
+  top: 5px;
+  right: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next-btn {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /* Skills */
 .skill__list {
@@ -339,6 +438,8 @@ section {
     display: flex;
     align-items: center;
     transition: 0.25s;
+    position: relative;
+  overflow: hidden;
 }
 
 .skill__box-list__item:hover {
@@ -464,6 +565,33 @@ section {
     }
 }
 
+.skill-progress {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 0;
+  background: #00ffff;
+  border-radius: 2px;
+  transition: width 1s ease;
+  color:var(--main-color)
+}
+
+.skill__box-list__item::after {
+  content: attr(data-skill) '%';
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  font-size: 1rem;
+  color: var(--main-color);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.skill__box-list__item:hover::after {
+  opacity: 1;
+}
 /* Project */
 .project__box {
     display: grid;
