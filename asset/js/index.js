@@ -122,3 +122,36 @@ document.querySelectorAll('.skill__box-list__item').forEach(item => {
     progress.style.width = '0';
   });
 });
+// cert 
+const leftBtn = document.querySelector(".left__arrow");
+const rightBtn = document.querySelector(".right__arrow");
+ let cert = 0; 
+const activeCertificate = () =>{
+   const certSlide = document.querySelector(".cert__slide");
+    certSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 20}px))`;
+ 
+    if (index === 0) {
+        leftBtn.classList.add('disabled');
+        rightBtn.classList.remove('disabled');
+    } else if (index === 1) {
+        rightBtn.classList.add('disabled');
+        leftBtn.classList.remove('disabled');
+    }
+    // Nút phải
+rightBtn.addEventListener('click', () => {
+    if (index < 1) {
+        index++;
+        activeCertificate();
+    }
+});
+
+// Nút trái
+leftBtn.addEventListener('click', () => {
+    if (index > 0) {
+        index--;
+        activeCertificate();
+    }
+});
+};
+
+activeCertificate();
