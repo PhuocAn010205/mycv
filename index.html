@@ -35,397 +35,398 @@
             <!--css -->
             <link rel="stylesheet" href="./asset/css/reset.css">
             <link rel="stylesheet" href="./asset/css/style.css">
+            <link rel="stylesheet" href="./asset/css/responsive.css">
             <title>MY CV</title>
 
 </head>
 
 <body>
-    <div id="content">
-        <header>
+
+    <header>
+        <div class="container">
+            <div class="body">
+                <a href="#home" class="logo">
+                    <img src="./asset/img/devan-removebg-preview.png" alt="Phuoc An" width="130px">
+                </a>
+                <!-- menu -->
+                <i class="fa-solid fa-bars menu_icon" id="menu-icon"></i>
+                <nav class="navbar">
+                    <ul class="navbar__list ">
+                        <li class="navbar__item">
+                            <a href="#home" class="navbar__link navbar__link--active">
+                                TRANG CHỦ
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#gioithieu" class="navbar__link">
+                                GIỚI THIỆU
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#skill" class="navbar__link">
+                                KỸ NĂNG
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#project" class="navbar__link">
+                                DỰ ÁN
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__link">
+                                LIÊN HỆ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!-- Trang chu -->
+        <section class="home " id="home">
             <div class="container">
-                <div class="body">
-                    <a href="#home" class="logo">
-                        <img src="./asset/img/devan-removebg-preview.png" alt="Phuoc An" width="130px">
-                    </a>
-                    <!-- menu -->
-                    <i class="fa-solid fa-bars menu_icon"></i>
-                    <nav class="navbar">
-                        <ul class="navbar__list ">
-                            <li class="navbar__item">
-                                <a href="#home" class="navbar__link navbar__link--active">
-                                    TRANG CHỦ
-                                </a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#gioithieu" class="navbar__link">
-                                    GIỚI THIỆU
-                                </a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#skill" class="navbar__link">
-                                    KỸ NĂNG
-                                </a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#project" class="navbar__link">
-                                    DỰ ÁN
-                                </a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#contact" class="navbar__link">
-                                    LIÊN HỆ
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="home-detail">
+                    <div class="home-left">
+                        <h1>Hi, I'm
+                            <span style="--i:2" data-text="Phước">Phước</span>
+                            <span style="--i:1;" data-text="An">An</span>
+                        </h1>
+                        <h2>I'm Project Management and Front-End DEVELOPER.</h2>
+                        <p> Với sự kết hợp giữa Project Management và khả năng thiết kế giao diện tinh tế chính là
+                            chìa
+                            khóa để
+                            kiến tạo nên những sản phẩm không chỉ đẹp mắt, mượt mà mà còn đạt được mục tiêu đề ra và
+                            kết
+                            nối sâu sắc với người dùng.
+                            Tôi luôn sẵn sàng học hỏi, đóng góp và phát triển cùng mọi dự án.</p>
+                        <div class="btn-sci">
+                            <button class="btn" onclick="download__pdf()">Download CV</button>
+                            <div class="sci">
+                                <a href="https://github.com/PhuocAn010205" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/an-hu%E1%BB%B3nh-nguy%E1%BB%85n-ph%C6%B0%E1%BB%9Bc-a660b5331/"
+                                    target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:huynh.an.10a1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-img">
+                        <img src="./asset/img/andepzai.jpg" alt="Phuoc An">
+                    </div>
                 </div>
             </div>
 
-        </header>
-        <main>
-            <!-- Trang chu -->
-            <section class="home " id="home">
-                <div class="container">
-                    <div class="home-detail">
-                        <div class="home-left">
-                            <h1>Hi, I'm
-                                <span style="--i:2" data-text="Phước">Phước</span>
-                                <span style="--i:1;" data-text="An">An</span>
-                            </h1>
-                            <h2>I'm Project Management and Front-End DEVELOPER.</h2>
-                            <p> Với sự kết hợp giữa Project Management và khả năng thiết kế giao diện tinh tế chính là
-                                chìa
-                                khóa để
-                                kiến tạo nên những sản phẩm không chỉ đẹp mắt, mượt mà mà còn đạt được mục tiêu đề ra và
-                                kết
-                                nối sâu sắc với người dùng.
-                                Tôi luôn sẵn sàng học hỏi, đóng góp và phát triển cùng mọi dự án.</p>
-                            <div class="btn-sci">
-                                <button class="btn" onclick="download__pdf()">Download CV</button>
-                                <div class="sci">
-                                    <a href="https://github.com/PhuocAn010205" target="_blank"
+        </section>
+        <!-- Gioi thieu -->
+        <section class="intro " id="gioithieu">
+
+            <div class="container">
+                <h2 class="section__heading">Giới Thiệu</h2>
+                <div class="intro__list">
+                    <!-- item1 -->
+                    <article class="intro__item">
+                        <h3 class="intro__item-heading">Về tôi</h3>
+                        <ul class="intro__item-list">
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/vetoi1.jpg","./asset/img/vetoi2.jpg","./asset/img/vetoi3.jpg"]'>
+                                <i class="fa-solid fa-user"></i>
+                                <span>Huỳnh Nguyễn Phước An</span>
+                            </li>
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/anhsnan.jpg","./asset/img/sn1.jpg"]'>
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <span>1/2/2005</span>
+                            </li>
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/quetoi.jpg","./asset/img/quetoi1.jpg"]'>
+                                <i class="fa-solid fa-map-pin"></i>
+                                <span>Xã Xuân Thiện ,huyện Thống Nhất,Đồng Nai</span>
+                            </li>
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/uth.jpg","./asset/img/uth1.jpg"]'>
+                                <i class="fa-solid fa-school"></i>
+                                <span style="line-height: 1.5; letter-spacing: 2px; text-align: justify;">Hiện là
+                                    sinh viên năm hai ngành Công nghệ thông tin tại Trường Đại học Giao thông vận
+                                    tải (UTH).</span>
+                            </li>
+                        </ul>
+                        <div class="full-image">
+                            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <img src="" alt="Ảnh">
+                            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </article>
+                    <!-- item 2 -->
+                    <article class="intro__item">
+                        <h3 class="intro__item-heading">Sở thích</h3>
+                        <ul class="intro__item-list">
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/caulong1.jpg","./asset/img/caulong2.jpg"]'>
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span>Đánh cầu lông </span>
+                            </li>
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/dulich1.jpg","./asset/img/dulich2.jpg","./asset/img/dulich3.jpg","./asset/img/dulich4.jpg","./asset/img/dulich5.jpg"]'>
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>Đi du lịch.</span>
+                            </li>
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/sach1.jpg","./asset/img/sach2.jpg","./asset/img/sach3.jpg","./asset/img/sach4.jpg","./asset/img/sach5.jpg"]'>
+                                <i class="fa-solid fa-book"></i></i>
+                                <span>Thích khám phá những thế giới mới qua từng trang sách.</span>
+                            </li>
+                            <li class="intro__item-list__item"
+                                data-images='["./asset/img/may5.jpg","./asset/img/may6.jpg","./asset/img/may3.jpg","./asset/img/may4.jpg"]'>
+                                <i class="fa-solid fa-cloud-sun"></i>
+                                <span>Ngắm nhìn bầu trời.</span>
+                            </li>
+                        </ul>
+                        <div class="full-image">
+                            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <img src="" alt="Ảnh">
+                            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </article>
+                    <!-- item 3 -->
+                    <article class="intro__item">
+                        <h3 class="intro__item-heading">Điểm mạnh</h3>
+                        <ul class="intro__item-list">
+                            <li class="intro__item-list__item">
+                                <i class="fa-solid fa-shapes"></i>
+                                <span>Linh hoạt và nhạy bén trong tư duy, có khả năng phân tích và giải quyết
+                                    vấn đề
+                                    hiệu quả.</span>
+                            </li>
+                            <li class="intro__item-list__item">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Nhiệt tình, sẵn sàng hỗ trợ đồng nghiệp và đóng góp tích cực vào công việc
+                                    chung.</span>
+                            </li>
+                            <li class="intro__item-list__item">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <span>Khả năng cân bằng hiệu quả giữa công việc học tập và cuộc sống cá
+                                    nhân.</span>
+                            </li>
+                            <li class="intro__item-list__item">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <span>Tinh thần trách nhiệm cao và nghiêm túc tuân thủ các quy định, cam
+                                    kết.</span>
+                            </li>
+                        </ul>
+                        <div class="full-image">
+                            <button class="close-btn">&times;</button>
+                            <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                            <img src="" alt="Xem ảnh">
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+        <!-- Skills -->
+        <section class="skill" id="skill">
+            <div class="container">
+                <h2 class="section__heading">Kỹ Năng</h2>
+
+                <div class="skill__list">
+                    <!-- Viền hiệu ứng chạy -->
+                    <div class="border-top"></div>
+                    <div class="border-bottom"></div>
+
+                    <!-- Front-End -->
+                    <article class="skill__top">
+                        <h3 class="skill__heading">Front-End</h3>
+                        <div class="skill__box">
+                            <ul class="skill__box-list">
+                                <li class="skill__box-list__item" data-skill="80">
+                                    <i class="fa-brands fa-html5"></i> <span>HTML</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                                <li class="skill__box-list__item" data-skill="80">
+                                    <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                                <li class="skill__box-list__item" data-skill="60">
+                                    <i class="fa-brands fa-js"></i><span>JS</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                                <li class="skill__box-list__item" data-skill="40">
+                                    <i class="fa-brands fa-bootstrap"></i> <span>Bootstrap</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Back-End -->
+                    <article class="skill__bottom">
+                        <h3 class="skill__heading">Back-End</h3>
+                        <div class="skill__box">
+                            <ul class="skill__box-list">
+                                <li class="skill__box-list__item" data-skill="30">
+                                    <i class="fa-brands fa-php"></i><span>PHP</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                                <li class="skill__box-list__item" data-skill="20">
+                                    <i class="fa-brands fa-node-js"></i><span>Node.js</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                                <li class="skill__box-list__item" data-skill="30">
+                                    <i class="fa-solid fa-database"></i><span>MySQL</span>
+                                    <div class="skill-progress"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Du an -->
+        <section id="project">
+
+            <div class="container">
+                <h2 class="section__heading">Personal Project</h2>
+                <div class="project__box">
+                    <article class="project__left">
+                        <div class="project__left-box project__left-box__active">
+                            <p class="numb">01</p>
+                            <h3 class="project__title">Frontend Project</h3>
+                            <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                            <P class="project__desc">Trong một thế giới mà con người ngày càng đề cao trải nghiệm cá
+                                nhân và kết nối cảm xúc, mình tin rằng mô hình phòng khám anime này sẽ không chỉ là
+                                nơi điều trị – mà là một thế giới nhỏ đầy cảm hứng, chữa lành cả răng miệng lẫn tâm
+                                hồn.
+                                Đây là sự giao thoa giữa hai thế giới tưởng chừng đối lập – anime và y tế – nhưng
+                                lại hoà quyện một cách hoàn hảo để tạo nên một trải nghiệm hoàn toàn mới: một nơi mà
+                                nụ cười bắt đầu bằng niềm vui, và niềm vui bắt đầu bằng trí tưởng tượng.
+
+                            </P>
+                            <div class="tech">
+                                <p class="tech__desc">HTML,CSS,JS</p>
+                                <div class="sci tech__icon ">
+                                    <a href="https://github.com/PhuocAn010205/du_an3" target="_blank"
                                         rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/an-hu%E1%BB%B3nh-nguy%E1%BB%85n-ph%C6%B0%E1%BB%9Bc-a660b5331/"
-                                        target="_blank" rel="noopener noreferrer"><i
-                                            class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="mailto:huynh.an.10a1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="home-img">
-                            <img src="./asset/img/andepzai.jpg" alt="Phuoc An">
+                        <!-- numb2 -->
+                        <div class="project__left-box">
+                            <p class="numb">02</p>
+                            <h3 class="project__title">Frontend Project</h3>
+                            <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                            <P class="project__desc">Trong một thế giới đang chuyển mình mạnh mẽ về công nghệ và thị
+                                hiếu thẩm mỹ, thị trường bất động sản không chỉ còn là cuộc chơi của giá trị tài sản
+                                – mà còn là trải nghiệm cảm xúc,
+                                sự tiện lợi và sự kết nối giữa con người và không gian sống. Chính vì thế, Besnik
+                                Agency ra đời như một làn gió mới trong cách tiếp cận lĩnh vực bất động sản, lấy cảm
+                                hứng từ sự tối giản, công nghệ hiện đại và tính nhân văn trong thiết kế.
+                            </P>
+                            <div class="tech">
+                                <p class="tech__desc">HTML,CSS,JS</p>
+                                <div class="sci tech__icon ">
+                                    <a href="https://github.com/PhuocAn010205/Du_an_1" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <!-- numb 3 -->
+                        <div class="project__left-box">
+                            <p class="numb">03</p>
+                            <h3 class="project__title">Frontend Project</h3>
+                            <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                            <P class="project__desc">
+                                Trong thế giới hiện đại, dữ liệu và công nghệ ngày càng đóng vai trò trung tâm –
+                                nhưng điều đó không có nghĩa trải nghiệm của con người phải trở nên khô khan. Xuất
+                                phát từ suy nghĩ đó, dự án này
+                                được xây dựng dựa trên ý tưởng kết hợp giữa thông tin thời tiết thực tế (thông qua
+                                API) với hình ảnh nền phong cách anime – nhằm tạo nên một không gian vừa hữu ích,
+                                vừa thơ mộng, vừa cá nhân hóa cao.
+                            </P>
+                            <div class="tech">
+                                <p class="tech__desc">HTML,CSS,JS,API</p>
+                                <div class="sci tech__icon ">
+                                    <a href="https://phuocan010205.github.io/thoi_tiet/" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- numb4 -->
+                        <div class="project__left-box">
+                            <p class="numb">04</p>
+                            <h3 class="project__title">Frontend Project</h3>
+                            <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
+                            <P class="project__desc">Trong thời đại nơi âm nhạc không chỉ là một nghệ thuật mà còn
+                                là một phong cách sống, ý tưởng về một nền tảng trực tuyến dành riêng cho các buổi
+                                biểu diễn âm nhạc đã ra đời –
+                                không chỉ để thông báo thông tin sự kiện mà còn truyền cảm hứng và khơi gợi cảm xúc
+                                cho người yêu nhạc. Dự án website biểu diễn âm nhạc này được thiết kế với mục tiêu
+                                mang đến một trải nghiệm sống động, hiện đại, dễ tiếp cận, và đặc biệt là đậm chất
+                                nghệ thuật.
+                            </P>
+                            <div class="tech">
+                                <p class="tech__desc">HTML,CSS,JS,Node.js</p>
+                                <div class="sci tech__icon ">
+                                    <a href="https://phuocan010205.github.io/-m-nh-c/" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project__right">
+                        <div class="project__carousel">
+                            <div class="img-slide">
+                                <!-- img item 1 -->
+                                <div class="img-item">
+                                    <img src="./asset/img/duan1.jpg" alt="Du an 1">
+                                </div>
+                                <!-- img item 2 -->
+                                <div class="img-item">
+                                    <img src="./asset/img/duan2.jpg" alt="Du an 2">
+                                </div>
+                                <!-- img item 3 -->
+                                <div class="img-item">
+                                    <img src="./asset/img/duan3.jpg" alt="Du an 3">
+                                </div>
+                                <!-- img item 4 -->
+                                <div class="img-item">
+                                    <img src="./asset/img/duan4.jpg" alt="Du an 4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <button class="arrow-left disabled"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
                 </div>
+            </div>
 
-            </section>
-            <!-- Gioi thieu -->
-            <section class="intro " id="gioithieu">
+        </section>
+        <section id="contact" class="contact">
 
-                <div class="container">
-                    <h2 class="section__heading">Giới Thiệu</h2>
-                    <div class="intro__list">
-                        <!-- item1 -->
-                        <article class="intro__item">
-                            <h3 class="intro__item-heading">Về tôi</h3>
-                            <ul class="intro__item-list">
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/vetoi1.jpg","./asset/img/vetoi2.jpg","./asset/img/vetoi3.jpg"]'>
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>Huỳnh Nguyễn Phước An</span>
-                                </li>
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/anhsnan.jpg","./asset/img/sn1.jpg"]'>
-                                    <i class="fa-solid fa-cake-candles"></i>
-                                    <span>1/2/2005</span>
-                                </li>
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/quetoi.jpg","./asset/img/quetoi1.jpg"]'>
-                                    <i class="fa-solid fa-map-pin"></i>
-                                    <span>Xã Xuân Thiện ,huyện Thống Nhất,Đồng Nai</span>
-                                </li>
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/uth.jpg","./asset/img/uth1.jpg"]'>
-                                    <i class="fa-solid fa-school"></i>
-                                    <span style="line-height: 1.5; letter-spacing: 2px; text-align: justify;">Hiện là
-                                        sinh viên năm hai ngành Công nghệ thông tin tại Trường Đại học Giao thông vận
-                                        tải (UTH).</span>
-                                </li>
-                            </ul>
-                            <div class="full-image">
-                                <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
-                                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                                <img src="" alt="Ảnh">
-                                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                            </div>
-                        </article>
-                        <!-- item 2 -->
-                        <article class="intro__item">
-                            <h3 class="intro__item-heading">Sở thích</h3>
-                            <ul class="intro__item-list">
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/caulong1.jpg","./asset/img/caulong2.jpg"]'>
-                                    <i class="fa-solid fa-heart-pulse"></i>
-                                    <span>Đánh cầu lông </span>
-                                </li>
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/dulich1.jpg","./asset/img/dulich2.jpg","./asset/img/dulich3.jpg","./asset/img/dulich4.jpg","./asset/img/dulich5.jpg"]'>
-                                    <i class="fa-solid fa-map-location-dot"></i>
-                                    <span>Đi du lịch.</span>
-                                </li>
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/sach1.jpg","./asset/img/sach2.jpg","./asset/img/sach3.jpg","./asset/img/sach4.jpg","./asset/img/sach5.jpg"]'>
-                                    <i class="fa-solid fa-book"></i></i>
-                                    <span>Đọc sách để mở rộng kiến thức và tìm kiếm nguồn cảm hứng.</span>
-                                </li>
-                                <li class="intro__item-list__item"
-                                    data-images='["./asset/img/may5.jpg","./asset/img/may6.jpg","./asset/img/may3.jpg","./asset/img/may4.jpg"]'>
-                                    <i class="fa-solid fa-cloud-sun"></i>
-                                    <span>Ngắm nhìn bầu trời.</span>
-                                </li>
-                            </ul>
-                            <div class="full-image">
-                                <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
-                                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                                <img src="" alt="Ảnh">
-                                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                            </div>
-                        </article>
-                        <!-- item 3 -->
-                        <article class="intro__item">
-                            <h3 class="intro__item-heading">Điểm mạnh</h3>
-                            <ul class="intro__item-list">
-                                <li class="intro__item-list__item">
-                                    <i class="fa-solid fa-shapes"></i>
-                                    <span>Linh hoạt và nhạy bén trong tư duy, có khả năng phân tích và giải quyết
-                                        vấn đề
-                                        hiệu quả.</span>
-                                </li>
-                                <li class="intro__item-list__item">
-                                    <i class="fa-solid fa-fire"></i>
-                                    <span>Nhiệt tình, sẵn sàng hỗ trợ đồng nghiệp và đóng góp tích cực vào công việc
-                                        chung.</span>
-                                </li>
-                                <li class="intro__item-list__item">
-                                    <i class="fa-solid fa-scale-balanced"></i>
-                                    <span>Khả năng cân bằng hiệu quả giữa công việc học tập và cuộc sống cá
-                                        nhân.</span>
-                                </li>
-                                <li class="intro__item-list__item">
-                                    <i class="fa-solid fa-user-tie"></i>
-                                    <span>Tinh thần trách nhiệm cao và nghiêm túc tuân thủ các quy định, cam
-                                        kết.</span>
-                                </li>
-                            </ul>
-                            <div class="full-image">
-                                <button class="close-btn">&times;</button>
-                                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                                <img src="" alt="Xem ảnh">
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </section>
-            <!-- Skills -->
-            <section class="skill" id="skill">
-                <div class="container">
-                    <h2 class="section__heading">Kỹ Năng</h2>
-
-                    <div class="skill__list">
-                        <!-- Viền hiệu ứng chạy -->
-                        <div class="border-top"></div>
-                        <div class="border-bottom"></div>
-
-                        <!-- Front-End -->
-                        <article class="skill__top">
-                            <h3 class="skill__heading">Front-End</h3>
-                            <div class="skill__box">
-                                <ul class="skill__box-list">
-                                    <li class="skill__box-list__item" data-skill="80">
-                                        <i class="fa-brands fa-html5"></i> <span>HTML</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                    <li class="skill__box-list__item" data-skill="80">
-                                        <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                    <li class="skill__box-list__item" data-skill="60">
-                                        <i class="fa-brands fa-js"></i><span>JS</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                    <li class="skill__box-list__item" data-skill="40">
-                                        <i class="fa-brands fa-bootstrap"></i> <span>Bootstrap</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <!-- Back-End -->
-                        <article class="skill__bottom">
-                            <h3 class="skill__heading">Back-End</h3>
-                            <div class="skill__box">
-                                <ul class="skill__box-list">
-                                    <li class="skill__box-list__item" data-skill="30">
-                                        <i class="fa-brands fa-php"></i><span>PHP</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                    <li class="skill__box-list__item" data-skill="20">
-                                        <i class="fa-brands fa-node-js"></i><span>Node.js</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                    <li class="skill__box-list__item" data-skill="30">
-                                        <i class="fa-solid fa-database"></i><span>MySQL</span>
-                                        <div class="skill-progress"></div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <!-- Du an -->
-            <section id="project">
-
-                <div class="container">
-                    <h2 class="section__heading">Personal Project</h2>
-                    <div class="project__box">
-                        <article class="project__left">
-                            <div class="project__left-box project__left-box__active">
-                                <p class="numb">01</p>
-                                <h3 class="project__title">Frontend Project</h3>
-                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
-                                <P class="project__desc">Trong một thế giới mà con người ngày càng đề cao trải nghiệm cá
-                                    nhân và kết nối cảm xúc, mình tin rằng mô hình phòng khám anime này sẽ không chỉ là
-                                    nơi điều trị – mà là một thế giới nhỏ đầy cảm hứng, chữa lành cả răng miệng lẫn tâm
-                                    hồn.
-                                    Đây là sự giao thoa giữa hai thế giới tưởng chừng đối lập – anime và y tế – nhưng
-                                    lại hoà quyện một cách hoàn hảo để tạo nên một trải nghiệm hoàn toàn mới: một nơi mà
-                                    nụ cười bắt đầu bằng niềm vui, và niềm vui bắt đầu bằng trí tưởng tượng.
-
-                                </P>
-                                <div class="tech">
-                                    <p class="tech__desc">HTML,CSS,JS</p>
-                                    <div class="sci tech__icon ">
-                                        <a href="https://github.com/PhuocAn010205/du_an3" target="_blank"
-                                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                                    </div>
+            <div class="container">
+                <h2 class="section__heading">Contact</h2>
+                <div class="contact__group">
+                    <div class="contact__desc">
+                        <h2 class="section__heading cert__heading">Một số Chứng Chỉ</h2>
+                        <div class="cert">
+                            <div class="cert__slide">
+                                <!-- cert img 1 -->
+                                <div class="cert__img">
+                                    <img src="./asset/img/cert.png" alt="">
+                                </div>
+                                <!-- cert img 2 -->
+                                <div class="cert__img">
+                                    <img src="./asset/img/cert1.png" alt="">
                                 </div>
                             </div>
-                            <!-- numb2 -->
-                            <div class="project__left-box">
-                                <p class="numb">02</p>
-                                <h3 class="project__title">Frontend Project</h3>
-                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
-                                <P class="project__desc">Trong một thế giới đang chuyển mình mạnh mẽ về công nghệ và thị
-                                    hiếu thẩm mỹ, thị trường bất động sản không chỉ còn là cuộc chơi của giá trị tài sản
-                                    – mà còn là trải nghiệm cảm xúc,
-                                    sự tiện lợi và sự kết nối giữa con người và không gian sống. Chính vì thế, Besnik
-                                    Agency ra đời như một làn gió mới trong cách tiếp cận lĩnh vực bất động sản, lấy cảm
-                                    hứng từ sự tối giản, công nghệ hiện đại và tính nhân văn trong thiết kế.
-                                </P>
-                                <div class="tech">
-                                    <p class="tech__desc">HTML,CSS,JS</p>
-                                    <div class="sci tech__icon ">
-                                        <a href="https://github.com/PhuocAn010205/Du_an_1" target="_blank"
-                                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- numb 3 -->
-                            <div class="project__left-box">
-                                <p class="numb">03</p>
-                                <h3 class="project__title">Frontend Project</h3>
-                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
-                                <P class="project__desc">
-                                    Trong thế giới hiện đại, dữ liệu và công nghệ ngày càng đóng vai trò trung tâm –
-                                    nhưng điều đó không có nghĩa trải nghiệm của con người phải trở nên khô khan. Xuất
-                                    phát từ suy nghĩ đó, dự án này
-                                    được xây dựng dựa trên ý tưởng kết hợp giữa thông tin thời tiết thực tế (thông qua
-                                    API) với hình ảnh nền phong cách anime – nhằm tạo nên một không gian vừa hữu ích,
-                                    vừa thơ mộng, vừa cá nhân hóa cao.
-                                </P>
-                                <div class="tech">
-                                    <p class="tech__desc">HTML,CSS,JS,API</p>
-                                    <div class="sci tech__icon ">
-                                        <a href="https://phuocan010205.github.io/thoi_tiet/" target="_blank"
-                                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- numb4 -->
-                            <div class="project__left-box">
-                                <p class="numb">04</p>
-                                <h3 class="project__title">Frontend Project</h3>
-                                <h4 class="project__idea">✨Cảm Hứng & Ý Tưởng</h4>
-                                <P class="project__desc">Trong thời đại nơi âm nhạc không chỉ là một nghệ thuật mà còn
-                                    là một phong cách sống, ý tưởng về một nền tảng trực tuyến dành riêng cho các buổi
-                                    biểu diễn âm nhạc đã ra đời –
-                                    không chỉ để thông báo thông tin sự kiện mà còn truyền cảm hứng và khơi gợi cảm xúc
-                                    cho người yêu nhạc. Dự án website biểu diễn âm nhạc này được thiết kế với mục tiêu
-                                    mang đến một trải nghiệm sống động, hiện đại, dễ tiếp cận, và đặc biệt là đậm chất
-                                    nghệ thuật.
-                                </P>
-                                <div class="tech">
-                                    <p class="tech__desc">HTML,CSS,JS,Node.js</p>
-                                    <div class="sci tech__icon ">
-                                        <a href="https://phuocan010205.github.io/-m-nh-c/" target="_blank"
-                                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project__right">
-                            <div class="project__carousel">
-                                <div class="img-slide">
-                                    <!-- img item 1 -->
-                                    <div class="img-item">
-                                        <img src="./asset/img/duan1.jpg" alt="Du an 1">
-                                    </div>
-                                    <!-- img item 2 -->
-                                    <div class="img-item">
-                                        <img src="./asset/img/duan2.jpg" alt="Du an 2">
-                                    </div>
-                                    <!-- img item 3 -->
-                                    <div class="img-item">
-                                        <img src="./asset/img/duan3.jpg" alt="Du an 3">
-                                    </div>
-                                    <!-- img item 4 -->
-                                    <div class="img-item">
-                                        <img src="./asset/img/duan4.jpg" alt="Du an 4">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navigation">
-                                <button class="arrow-left disabled"><i class="fa-solid fa-arrow-left"></i></button>
-                                <button class="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </section>
-            <section id="contact" class="contact">
-
-                <div class="container">
-                    <h2 class="section__heading">Contact</h2>
-                    <div class="contact__group">
-                        <div class="contact__desc">
-                            <h2 class="section__heading cert__heading">Một số Chứng Chỉ</h2>
-                                <div class="cert">
-                                    <div class="cert__slide">
-                                        <!-- cert img 1 -->
-                                        <div class="cert__img">
-                                            <img src="./asset/img/cert.png" alt="">
-                                        </div>
-                                        <!-- cert img 2 -->
-                                        <div class="cert__img">
-                                            <img src="./asset/img/cert1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="cert__btn">
+                            <div class="cert__btn">
                                 <button class="left__arrow disabled"><i class="fa-solid fa-arrow-left"></i></button>
                                 <button class="right__arrow"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
@@ -433,30 +434,29 @@
                                 và biến chúng thành một sản phẩm đột phá, khác biệt
                                 và đầy giá trị.
                             </p>
-                                </div>
                         </div>
-                        <form>
-                            <input type="text" id="name" placeholder="Name">
-
-                            <input type="email" id="email" placeholder="Email">
-
-                            <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-                            <button type="submit" class="btn btn__form" id="subimt">Send Message</button>
-                        </form>
                     </div>
-                </div>
+                    <form>
+                        <input type="text" id="name" placeholder="Name">
 
-            </section>
-        </main>
-        <!-- footer-->
-        <footer class="footer">
-            <div class="container">
-                <h2 class="footer__desc">Copyright © 2025 . All Rights Reserved.</h2>
+                        <input type="email" id="email" placeholder="Email">
+
+                        <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                        <button type="submit" class="btn btn__form" id="subimt">Send Message</button>
+                    </form>
+                </div>
             </div>
 
-        </footer>
-    </div>
+        </section>
+    </main>
+    <!-- footer-->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__desc">Copyright © 2025 . All Rights Reserved.</h2>
+        </div>
+
+    </footer>
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="

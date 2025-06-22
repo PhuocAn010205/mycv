@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   html2pdf().set(opt).from(element).save();
     }
-    
+    //anh o du an
 const arrowRight =document.querySelector('.project__right .navigation .arrow-right');
 const arrowLeft =document.querySelector('.project__right .navigation .arrow-left');
 
@@ -128,30 +128,51 @@ const rightBtn = document.querySelector(".right__arrow");
  let cert = 0; 
 const activeCertificate = () =>{
    const certSlide = document.querySelector(".cert__slide");
-    certSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 20}px))`;
+    certSlide.style.transform = `translateX(calc(${cert * -100}% - ${cert * 20}px))`;
  
-    if (index === 0) {
+    if (cert=== 0) {
         leftBtn.classList.add('disabled');
         rightBtn.classList.remove('disabled');
-    } else if (index === 1) {
+    } else if (cert === 1) {
         rightBtn.classList.add('disabled');
         leftBtn.classList.remove('disabled');
     }
     // Nút phải
 rightBtn.addEventListener('click', () => {
-    if (index < 1) {
-        index++;
+    if (cert < 1) {
+        cert++;
         activeCertificate();
     }
 });
 
 // Nút trái
 leftBtn.addEventListener('click', () => {
-    if (index > 0) {
-        index--;
+    if (cert > 0) {
+        cert--;
         activeCertificate();
     }
 });
 };
 
 activeCertificate();
+// menu icon 
+const menuIcon = document.getElementById("menu-icon");
+const navBar = document.querySelector('.navbar');
+menuIcon.addEventListener('click',()=>{
+   menuIcon.classList.toggle('fa-xmark');
+   navBar.classList.toggle('active');
+});
+
+// Đóng menu khi click vào một link trên menu (mobile)
+document.querySelectorAll('.navbar__link').forEach(link => {
+  link.addEventListener('click', () => {
+    navBar.classList.remove('active');
+    menuIcon.classList.remove('fa-xmark');
+  });
+});
+// 
+document.querySelectorAll(".skill__box-list__item").forEach(item =>{
+  item.addEventListener('click',function(){
+    alert(this.data.skill);
+  })
+})

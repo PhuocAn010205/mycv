@@ -758,13 +758,14 @@ section {
   position: absolute;
  top: 50%;
   transform: translateY(-50%);
-  
+  margin-right: 10px;
 }
 .right__arrow {
     right: 8px;
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
+    margin-left: 10px;
 }
 
 
@@ -791,6 +792,10 @@ section {
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
+.contact__group form input::placeholder,
+.contact__group form textarea::placeholder{
+    color: var(--main-color);
+}
 
 .btn__form {
     width: 200px;
@@ -803,7 +808,6 @@ margin-top: 10px;
     margin-left: 50px;
     line-height: 1.5;
     font-weight: 500;
-    width: 400px;
 }
 /* footer */
 .footer {
@@ -818,112 +822,4 @@ margin-top: 10px;
     text-align: center;
     letter-spacing: 2px;
 
-}
-/*Responsive   */
-
-@media (max-width: 1024px) {
-    .container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 24px;
-    }
-    .body {
-       flex-direction: column-reverse;
-    }
-    .intro__list {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-    }
-    .project__box {
-        grid-template-columns: 1fr;
-    }
-    .home-detail {
-        flex-direction: column-reverse;
-        gap: 30px;
-        text-align: center;
-    }
-    .contact__group {
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-/* Mobile: width <= 768px */
-@media (max-width: 768px) {
-    .body {
-       flex-direction: row;
-        padding: 24px 0 8px;
-    }
-    .navbar__list {
-        flex-direction: column;
-        gap: 1.2rem;
-        background: var(--secondary-color);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 180px;
-        display: none;
-    }
-    .navbar__list.active {
-        display: flex;
-    }
-    .menu_icon {
-         display: block;
-        cursor: pointer;
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    }
-    .intro__list {
-        row-gap: 20px;
-    }
- 
-
-
-/* Small Mobile: width <= 480px */
-@media (max-width: 480px) {
-    html {
-        font-size: 48%;
-    }
-    .section__heading {
-        font-size: 2.2rem;
-    }
-    .home-detail h1 {
-        font-size: 2.4rem;
-    }
-    .home-detail h2 {
-        font-size: 1.6rem;
-    }
-    .project__title {
-        font-size: 2rem;
-    }
-   .skill__box-list {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr); /* 2 hàng */
-        gap: 12px;
-    }
-    .skill__box-list__item {
-        grid-column: 1 / -1; /* mỗi item chiếm 1 hàng */
-        width: 100%;
-    }
-
-    .numb {
-        font-size: 3rem;
-    }
-    .footer__desc {
-        font-size: 1.1rem;
-    }
-    .btn, .btn__form {
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 8px 10px;
-    }
-    .container {
-        padding: 0 8px;
-    }
-    .sci {
-        display:flex;
-    }
 }
