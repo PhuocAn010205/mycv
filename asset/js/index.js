@@ -108,7 +108,15 @@ document.querySelectorAll('.intro__item').forEach(article => {
     imageEl.src = '';
     imageList = [];
   });
+
+  // ✅ THÊM PHẦN NÀY để tắt ảnh khi chuột rời khỏi .full-image
+  imageBox.addEventListener('mouseleave', () => {
+    imageBox.classList.remove('active');
+    imageEl.src = '';
+    imageList = [];
+  });
 });
+
 // chạy %
 document.querySelectorAll('.skill__box-list__item').forEach(item => {
   const progress = item.querySelector('.skill-progress');
