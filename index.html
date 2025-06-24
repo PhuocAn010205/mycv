@@ -27,8 +27,8 @@
     <link rel="icon" type="image/png" sizes="192x192" href="./asset/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png " sizes="32x32" href="./asset/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./asset/favicon/favicon-96x96.png">
-    <liên kết rel="biểu tượng" loại="hình ảnh/png" kích thước="16x16" href="./asset/favicon/favicon-16x16.png">
-        <liên kết rel="bản kê khai" href="/manifest.json">
+    <liên  rel="biểu tượng" loại="hình ảnh/png" kích thước="16x16" href="./asset/favicon/favicon-16x16.png">
+        <liên  rel="bản kê khai" href="/manifest.json">
             <meta name="msapplication-TileColor" nội dung="#ffffff">
             <meta name="msapplication-TileImage" nội dung="/ms-icon-144x144.png">
             <meta name="theme-color" nội dung="#ffffff">
@@ -36,6 +36,7 @@
             <link rel="stylesheet" href="./asset/css/reset.css">
             <link rel="stylesheet" href="./asset/css/style.css">
             <link rel="stylesheet" href="./asset/css/responsive.css">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <title>MY CV</title>
 
 </head>
@@ -83,15 +84,16 @@
         </div>
 
     </header>
+    <!-- main -->
     <main>
         <!-- Trang chu -->
         <section class="home " id="home">
             <div class="container">
                 <div class="home-detail">
-                    <div class="home-left">
-                        <h1>Hi, I'm
-                            <span style="--i:2" data-text="Phước">Phước</span>
-                            <span style="--i:1;" data-text="An">An</span>
+                    <div class="home-left" >
+                        <h1>Hi, 
+                            <span style="--i:2" data-text="I'm">I'm</span>
+                            <span style="--i:1;" data-text="PhướcAn">PhướcAn</span>
                         </h1>
                         <h2>I'm Project Management and Front-End DEVELOPER.</h2>
                         <p> Với sự kết hợp giữa Project Management và khả năng thiết kế giao diện tinh tế chính là
@@ -114,7 +116,9 @@
                         </div>
                     </div>
                     <div class="home-img">
-                        <img src="./asset/img/andepzai.jpg" alt="Phuoc An">
+                        <img src="./asset/img/andepzai.jpg" alt="Phuoc An" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                     </div>
                 </div>
             </div>
@@ -125,11 +129,11 @@
 
             <div class="container">
                 <h2 class="section__heading">Giới Thiệu</h2>
-                <div class="intro__list">
+                <div class="intro__list"  data-aos="zoom-in">
                     <!-- item1 -->
                     <article class="intro__item">
                         <h3 class="intro__item-heading">Về tôi</h3>
-                        <ul class="intro__item-list">
+                        <ul class="intro__item-list" >
                             <li class="intro__item-list__item"
                                 data-images='["./asset/img/vetoi1.jpg","./asset/img/vetoi2.jpg","./asset/img/vetoi3.jpg"]'>
                                 <i class="fa-solid fa-user"></i>
@@ -196,23 +200,23 @@
                     <article class="intro__item">
                         <h3 class="intro__item-heading">Điểm mạnh</h3>
                         <ul class="intro__item-list">
-                            <li class="intro__item-list__item">
+                            <li class="intro__item-list__item" style="  cursor: help;">
                                 <i class="fa-solid fa-shapes"></i>
                                 <span>Linh hoạt và nhạy bén trong tư duy, có khả năng phân tích và giải quyết
                                     vấn đề
                                     hiệu quả.</span>
                             </li>
-                            <li class="intro__item-list__item">
+                            <li class="intro__item-list__item"  style="  cursor: help;">
                                 <i class="fa-solid fa-fire"></i>
                                 <span>Nhiệt tình, sẵn sàng hỗ trợ đồng nghiệp và đóng góp tích cực vào công việc
                                     chung.</span>
                             </li>
-                            <li class="intro__item-list__item">
+                            <li class="intro__item-list__item"  style="  cursor: help;">
                                 <i class="fa-solid fa-scale-balanced"></i>
                                 <span>Khả năng cân bằng hiệu quả giữa công việc học tập và cuộc sống cá
                                     nhân.</span>
                             </li>
-                            <li class="intro__item-list__item">
+                            <li class="intro__item-list__item"  style="  cursor: help;">
                                 <i class="fa-solid fa-user-tie"></i>
                                 <span>Tinh thần trách nhiệm cao và nghiêm túc tuân thủ các quy định, cam
                                     kết.</span>
@@ -382,7 +386,10 @@
                         <div class="project__carousel">
                             <div class="img-slide">
                                 <!-- img item 1 -->
-                                <div class="img-item">
+                                <div class="img-item"  data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0">
                                     <img src="./asset/img/duan1.jpg" alt="Du an 1">
                                 </div>
                                 <!-- img item 2 -->
@@ -438,9 +445,9 @@
                     </div>
                     <form>
                         <input type="text" id="name" placeholder="Name">
-
+                         
                         <input type="email" id="email" placeholder="Email">
-
+                            
                         <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
 
                         <button type="submit" class="btn btn__form" id="subimt">Send Message</button>
@@ -453,7 +460,7 @@
     <!-- footer-->
     <footer class="footer">
         <div class="container">
-            <h2 class="footer__desc">Copyright © 2025 . All Rights Reserved.</h2>
+            <h2 class="footer__desc">Copyright © 2025 Phuoc An. All rights reserved.</h2>
         </div>
 
     </footer>
@@ -462,6 +469,12 @@
         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./asset/js/index.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

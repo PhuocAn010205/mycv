@@ -117,7 +117,7 @@ section {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: 0.8px var(--main-color);
-    animation: display-text 8s linear infinite;
+    animation: display-text 10s linear infinite;
     animation-delay: calc(-4s * var(--i));
 
 }
@@ -676,7 +676,7 @@ section {
 
 .navigation {
     text-align: right;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .navigation button {
