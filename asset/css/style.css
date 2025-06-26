@@ -234,6 +234,7 @@ section {
     background-color: transparent;
     color: var(--main-color);
     box-shadow: none;
+    cursor: pointer;
 }
 #content {
   width: 100%;
